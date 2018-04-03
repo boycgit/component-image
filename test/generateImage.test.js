@@ -1,13 +1,29 @@
+import { createElement, Component, render } from 'rax';
+import Text from 'rax-text';
+import View from 'rax-view';
 import fs from 'fs';
 import path from 'path';
-import React from 'react';
 import { generateImage } from '../index';
 
+const styles = {
+  container: {
+    width: '750px',
+    backgroundColor: '#eee',
+  },
+  header: {
+    fontSize: '40px',
+    color: 'white',
+    backgroundColor: '#f44336',
+  },
+  body: {
+    fontSize: '20px',
+  },
+};
 const component = (
-  <div>
-    <h1>Component Image</h1>
-    <h2>Hello world</h2>
-  </div>
+  <View style={styles.container}>
+    <Text style={styles.header}>Component Image</Text>
+    <Text style={styles.body}>Hello world</Text>
+  </View>
 );
 
 describe('generateImage()', () => {

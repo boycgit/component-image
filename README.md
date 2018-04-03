@@ -1,6 +1,8 @@
-# Component Image
+# Rax Component Image
 
-Generate image snapshots of React components for visual regression testing.
+This repository is inspired by [component-image](https://github.com/corygibbons/component-image)
+
+Generate image snapshots of Rax components for visual regression testing.
 This package will only give you the image, you'll have to diff it with something else (like [`jest-image-snapshot`](https://www.npmjs.com/package/jest-image-snapshot)).
 
 [![npm version](https://img.shields.io/npm/v/component-image.svg?style=flat-square)](https://www.npmjs.com/package/component-image)
@@ -12,7 +14,7 @@ This package will only give you the image, you'll have to diff it with something
 #### Install
 
 ```
-npm install component-image
+npm install rax-component-image
 ```
 
 #### Use
@@ -34,7 +36,7 @@ options = {
     width: 800,
     height: 600,
   },
-  renderer: ReactDOMServer.renderToStaticMarkup,
+  renderer: RaxDOMServer.renderToStaticMarkup,
   image: {
     // Path to save image, likely unnecessary
     path: undefined,
@@ -47,7 +49,7 @@ options = {
 Usage with `jest-image-snapshot`:
 
 ```js
-import React from 'react';
+import Rax from 'Rax';
 import { generateImage } from 'component-image'
 
 const component = (

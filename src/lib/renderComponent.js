@@ -1,13 +1,13 @@
-const ReactDOMServer = require('react-dom/server');
+const RaxServerRenderer = require('rax-server-renderer');
 
 module.exports = function(
   component,
-  renderer = ReactDOMServer.renderToStaticMarkup
+  renderer = RaxServerRenderer.renderToString
 ) {
   try {
     const renderedComponent = renderer(component);
     return renderedComponent;
   } catch (e) {
-    throw Error('Not a valid React component');
+    throw Error('Not a valid Rax component');
   }
 };
