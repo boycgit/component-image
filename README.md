@@ -36,7 +36,7 @@ options = {
     width: 800,
     height: 600,
   },
-  renderer: RaxDOMServer.renderToStaticMarkup,
+  renderer: RaxServerRenderer.renderToString,
   image: {
     // Path to save image, likely unnecessary
     path: undefined,
@@ -49,7 +49,7 @@ options = {
 Usage with `jest-image-snapshot`:
 
 ```js
-import Rax from 'Rax';
+import { createElement } from 'rax';
 import { generateImage } from 'component-image'
 
 const component = (
