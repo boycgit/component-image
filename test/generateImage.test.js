@@ -5,20 +5,8 @@ import fs from 'fs';
 import path from 'path';
 import { generateImage } from '../index';
 
-const styles = {
-  container: {
-    width: '750px',
-    backgroundColor: '#eee',
-  },
-  header: {
-    fontSize: '40px',
-    color: 'white',
-    backgroundColor: '#f44336',
-  },
-  body: {
-    fontSize: '20px',
-  },
-};
+const styles = require('./data/component.css');
+
 const component = (
   <View style={styles.container}>
     <Text style={styles.header}>Component Image</Text>

@@ -1,6 +1,6 @@
 {
   "name": "rax-component-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate image snapshots of rax components",
   "main": "index.js",
   "scripts": {
@@ -19,13 +19,14 @@
   },
   "dependencies": {
     "lodash.merge": "^4.6.1",
-    "nunjucks": "^3.1.2",
+    "nunjucks": "3.0.1",
     "puppeteer": "^1.2.0",
     "rax": "^0.5.4",
     "rax-server-renderer": "^0.5.4"
   },
   "devDependencies": {
     "babel-jest": "^20.0.3",
+    "babel-plugin-transform-rax-styles": "x.x.x",
     "babel-preset-env": "^1.6.1",
     "babel-preset-rax": "^0.5.4",
     "codecov": "^2.3.0",

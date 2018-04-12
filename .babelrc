@@ -1,3 +1,8 @@
 {
-  "presets": ["env", "rax"]
+  "presets": ["env", "rax"],
+  "plugins": [
+    [
+      "transform-rax-styles"
+    ]
+  ]
 }
