@@ -1,6 +1,6 @@
 {
   "name": "rax-component-image",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate image snapshots of rax components",
   "main": "index.js",
   "scripts": {
